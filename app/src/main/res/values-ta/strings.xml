@@ -25,4 +25,25 @@
     <string name="post_unbookmark_cd">புக்மார்க்கை அகற்று</string>
     <string name="bookmark_added">புக்மார்க்குகளில் சேமிக்கப்பட்டது</string>
     <string name="bookmark_removed">புக்மார்க்குகளிலிருந்து அகற்றப்பட்டது</string>
+    <!-- SAMPLE (video): Reels + Player -->
+    <string name="tab_reels">ரீல்ஸ்</string>
+    <string name="video_play_cd">இயக்கு</string>
+    <string name="video_pause_cd">இடைநிறுத்து</string>
+    <string name="video_error_playback">இந்த வீடியோவை இப்போது இயக்க முடியாது.</string>
+    <string name="video_error_no_source">இந்த வீடியோவுக்கு இயக்கக்கூடிய மூலம் இல்லை.</string>
+    <string name="video_open_player">பிளேயரைத் திற</string>
+    <string name="video_speed">வேகம்</string>
+    <string name="video_speed_cd">இயக்க வேகம் %1$s×</string>
+    <string name="video_more">மேலும்</string>
+    <string name="video_less">குறைவு</string>
+    <string name="player_options">விருப்பங்கள்</string>
+    <string name="player_seek_cd">நகர்த்து</string>
+    <string name="player_quality">தரம்</string>
+    <string name="player_quality_auto">தானியங்கு</string>
+    <string name="player_quality_auto_hint">உங்கள் இணைப்புக்கு ஏற்ப மாறும்</string>
+    <string name="player_loading">ஏற்றுகிறது…</string>
+    <string name="player_quality_dropped">மெதுவான இணைப்பு — %1$s க்கு மாற்றப்பட்டது</string>
+    <string name="player_switch_back_quality">உயர் தரத்துக்குத் திரும்பு</string>
+    <string name="player_feed_end">முடிவை அடைந்துவிட்டீர்கள்</string>
+    <string name="player_replay">மீண்டும் பார்</string>
 </resources>

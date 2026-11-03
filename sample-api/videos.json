@@ -1,0 +1,68 @@
+{
+  "videos": [
+    {
+      "id": "screens-10s",
+      "title": "Android screens",
+      "description": "Short 10-second clip — reaches the end quickly, so you can watch the feed advance to the next reel on its own.",
+      "thumbnailUrl": null,
+      "sources": {
+        "720p": "https://storage.googleapis.com/exoplayer-test-media-1/mp4/android-screens-10s.mp4"
+      }
+    },
+    {
+      "id": "screens-ladder",
+      "title": "Quality ladder",
+      "description": "Two renditions (480p, 240p) of the same video. Pick a quality in the player options, or leave Auto and it steps down by itself when buffering lasts more than 5 seconds. Video only, no audio track.",
+      "thumbnailUrl": null,
+      "sources": {
+        "480p": "https://storage.googleapis.com/exoplayer-test-media-1/gen-3/screens/dash-vod-single-segment/video-avc-baseline-480.mp4",
+        "240p": "https://storage.googleapis.com/exoplayer-test-media-1/gen-3/screens/dash-vod-single-segment/video-avc-baseline-240.mp4"
+      }
+    },
+    {
+      "id": "big-buck-bunny",
+      "title": "Big Buck Bunny",
+      "description": "Blender open movie at 320×180, about 10 minutes — small file, decodes everywhere.",
+      "thumbnailUrl": null,
+      "sources": {
+        "180p": "https://storage.googleapis.com/exoplayer-test-media-0/BigBuckBunny_320x180.mp4"
+      }
+    },
+    {
+      "id": "dizzy",
+      "title": "Dizzy",
+      "description": "25-second 480×360 clip with an embedded tx3g subtitle track.",
+      "thumbnailUrl": null,
+      "sources": {
+        "360p": "https://storage.googleapis.com/exoplayer-test-media-1/mp4/dizzy-with-tx3g.mp4"
+      }
+    },
+    {
+      "id": "screens-25s",
+      "title": "Android screens (25s)",
+      "description": "Longer cut of the screens clip.",
+      "thumbnailUrl": null,
+      "sources": {
+        "720p": "https://storage.googleapis.com/exoplayer-test-media-1/mp4/android-screens-25s.mp4"
+      }
+    },
+    {
+      "id": "bbb-hevc",
+      "title": "Big Buck Bunny (HEVC)",
+      "description": "12-second 760×480 HEVC encode, video only — checks H.265 hardware decoding.",
+      "thumbnailUrl": null,
+      "sources": {
+        "480p": "https://storage.googleapis.com/exoplayer-test-media-1/mp4/bbb_760x480_1mbps_25fps_hevc.mp4"
+      }
+    },
+    {
+      "id": "frame-counter",
+      "title": "Frame counter (1 hour)",
+      "description": "One-hour frame counter. Seek ahead, leave the player and come back: it resumes from where you stopped.",
+      "thumbnailUrl": null,
+      "sources": {
+        "720p": "https://storage.googleapis.com/exoplayer-test-media-1/mp4/frame-counter-one-hour.mp4"
+      }
+    }
+  ]
+}

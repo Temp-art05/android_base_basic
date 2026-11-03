@@ -6,6 +6,7 @@ import com.base.app.core.navigation.core.NavigationRequest
 import com.base.app.core.navigation.core.ScreenProvider
 import com.base.app.core.navigation.destination.Destination
 import com.base.app.feature.main.presentation.language.LanguageScreenProvider
+import com.base.app.feature.main.presentation.player.PlayerScreenProvider
 import com.base.app.feature.main.presentation.postdetail.PostDetailScreenProvider
 import kotlin.reflect.KType
 import kotlinx.serialization.Serializable
@@ -26,6 +27,9 @@ class MainScreenProvider : ScreenProvider<MainScreenProvider.Main, MainViewModel
             viewModel = viewModel,
             onOpenPostDetail = { postId ->
                 onNavigationRequest(NavigationRequest.NavigateTo(PostDetailScreenProvider.PostDetail(postId)))
+            },
+            onOpenPlayer = { videoId ->
+                onNavigationRequest(NavigationRequest.NavigateTo(PlayerScreenProvider.Player(videoId)))
             },
             onOpenLanguage = { onNavigationRequest(NavigationRequest.NavigateTo(LanguageScreenProvider.Language)) },
         )

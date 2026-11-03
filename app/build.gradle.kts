@@ -139,6 +139,7 @@ dependencies {
     testImplementation(libs.bundles.unit.test)
     testImplementation(libs.robolectric)
     testImplementation(libs.androidx.test.core)
+    testImplementation(testFixtures(project(":core:media"))) // FakeFeedPlayer cho test Reels/Player
 }
 
 fun ProductFlavor.stringBuildConfig(name: String, value: String) {

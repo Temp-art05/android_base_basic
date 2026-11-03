@@ -25,6 +25,7 @@ import com.base.app.feature.main.presentation.main.home.HomeScreen
 import com.base.app.feature.main.presentation.main.bookmarks.BookmarksScreen
 import com.base.app.feature.main.presentation.main.component.MainBottomNavBar
 import com.base.app.feature.main.presentation.main.model.MainTab
+import com.base.app.feature.main.presentation.main.reels.ReelsScreen
 import com.base.app.feature.main.presentation.main.settings.SettingsScreen
 
 private val tabs = MainTab.entries
@@ -33,6 +34,7 @@ private val tabs = MainTab.entries
 fun MainScreen(
     viewModel: MainViewModel,
     onOpenPostDetail: (postId: Int) -> Unit,
+    onOpenPlayer: (videoId: String) -> Unit,
     onOpenLanguage: () -> Unit,
 ) {
     val viewState by viewModel.viewState.collectAsStateWithLifecycle()
@@ -57,6 +59,10 @@ fun MainScreen(
             when (tab) {
                 MainTab.Home -> HomeScreen(
                     onOpenPostDetail = onOpenPostDetail,
+                )
+                MainTab.Reels -> ReelsScreen(
+                    isSelected = viewState.selectedTab == MainTab.Reels,
+                    onOpenPlayer = onOpenPlayer,
                 )
                 MainTab.Bookmarks -> BookmarksScreen(
                     onOpenPostDetail = onOpenPostDetail,

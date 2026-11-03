@@ -14,6 +14,7 @@ import com.base.app.core.navigation.core.applyDestination
 import com.base.app.core.navigation.destination.Destination
 import com.base.app.feature.main.presentation.language.LanguageScreenProvider
 import com.base.app.feature.main.presentation.main.MainScreenProvider
+import com.base.app.feature.main.presentation.player.PlayerScreenProvider
 import com.base.app.feature.main.presentation.postdetail.PostDetailScreenProvider
 
 private const val NAV_ANIM_DURATION = 300
@@ -60,6 +61,7 @@ fun AppNavGraph(
             applyDestination(MainScreenProvider())
             applyDestination(PostDetailScreenProvider())
             applyDestination(LanguageScreenProvider())
+            applyDestination(PlayerScreenProvider())
         }
     }
 }

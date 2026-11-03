@@ -4,7 +4,9 @@ import com.base.app.feature.main.presentation.language.LanguageViewModel
 import com.base.app.feature.main.presentation.main.MainViewModel
 import com.base.app.feature.main.presentation.main.bookmarks.BookmarksViewModel
 import com.base.app.feature.main.presentation.main.home.HomeViewModel
+import com.base.app.feature.main.presentation.main.reels.ReelsViewModel
 import com.base.app.feature.main.presentation.main.settings.SettingsViewModel
+import com.base.app.feature.main.presentation.player.PlayerViewModel
 import com.base.app.feature.main.presentation.postdetail.PostDetailViewModel
 import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module
@@ -13,8 +15,10 @@ import org.koin.dsl.module
 val mainModule = module {
     viewModelOf(::MainViewModel)
     viewModelOf(::HomeViewModel)
+    viewModelOf(::ReelsViewModel) // SAMPLE (video)
     viewModelOf(::BookmarksViewModel)
     viewModelOf(::SettingsViewModel)
     viewModelOf(::PostDetailViewModel)
+    viewModelOf(::PlayerViewModel) // SAMPLE (video)
     viewModelOf(::LanguageViewModel)
 }

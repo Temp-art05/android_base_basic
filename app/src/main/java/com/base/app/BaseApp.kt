@@ -12,16 +12,21 @@ import com.base.app.core.analytics.analyticsModule
 import com.base.app.core.analytics.remoteconfig.RemoteConfigSource
 import com.base.app.core.analytics.remoteconfig.remoteConfigModule
 import com.base.app.core.designsystem.component.appImageLoader
+import com.base.app.core.media.DeviceTier
 import com.base.app.core.media.mediaModule
+import com.base.app.core.media.prepareMediaCache
 import com.base.app.core.utils.notification.NotificationHelper
 import com.base.app.data.di.dataModule
 import com.base.app.di.AppScope
 import com.base.app.di.appModule
 import com.base.app.di.configModule
 import com.base.app.feature.main.di.mainModule
+import java.io.File
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import org.koin.android.ext.android.get
+import org.koin.android.ext.android.getKoin
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -52,7 +57,7 @@ class BaseApp : Application(), SingletonImageLoader.Factory {
                 remoteConfigModule,
                 dataModule,
                 adsModule,
-                mediaModule(),
+                mediaModule(tierOverride = ::devTierOverride),
                 // Mỗi feature một module DI
                 mainModule,
             )
@@ -67,5 +72,18 @@ class BaseApp : Application(), SingletonImageLoader.Factory {
         get<CoroutineScope>(AppScope).launch { get<RemoteConfigSource>().fetchAndSync() }
         // MobileAds init chạy nền; request ad đầu tiên chờ remote config áp xong (tối đa 3 s).
         get<AdsInitializer>().start()
+        // Dựng SimpleCache sớm trên IO: xoá cache video của phiên trước ngay, lần mở player đầu khỏi chờ.
+        get<CoroutineScope>(AppScope).launch(Dispatchers.IO) { getKoin().prepareMediaCache() }
+    }
+
+    /**
+     * Flavor dev: ép mức máy để thử cấu hình máy yếu (ít player lân cận, buffer nhỏ) trên máy khoẻ —
+     * `adb shell run-as <pkg> touch files/force_low_tier` (hoặc `force_normal_tier`), rồi khởi động lại app.
+     */
+    private fun devTierOverride(): DeviceTier? = when {
+        !BuildConfig.IS_DEV_FLAVOR -> null
+        File(filesDir, "force_low_tier").exists() -> DeviceTier.LOW
+        File(filesDir, "force_normal_tier").exists() -> DeviceTier.NORMAL
+        else -> null
     }
 }

@@ -25,4 +25,25 @@
     <string name="post_unbookmark_cd">Yer imini kaldır</string>
     <string name="bookmark_added">Yer imlerine kaydedildi</string>
     <string name="bookmark_removed">Yer imlerinden kaldırıldı</string>
+    <!-- SAMPLE (video): Reels + Player -->
+    <string name="tab_reels">Reels</string>
+    <string name="video_play_cd">Oynat</string>
+    <string name="video_pause_cd">Duraklat</string>
+    <string name="video_error_playback">Bu video şu anda oynatılamıyor.</string>
+    <string name="video_error_no_source">Bu videonun oynatılabilir kaynağı yok.</string>
+    <string name="video_open_player">Oynatıcıyı aç</string>
+    <string name="video_speed">Hız</string>
+    <string name="video_speed_cd">Oynatma hızı %1$s×</string>
+    <string name="video_more">daha fazla</string>
+    <string name="video_less">daha az</string>
+    <string name="player_options">Seçenekler</string>
+    <string name="player_seek_cd">İleri/geri sar</string>
+    <string name="player_quality">Kalite</string>
+    <string name="player_quality_auto">Otomatik</string>
+    <string name="player_quality_auto_hint">Bağlantınıza göre ayarlanır</string>
+    <string name="player_loading">Yükleniyor…</string>
+    <string name="player_quality_dropped">Bağlantı yavaş — %1$s kaliteye geçildi</string>
+    <string name="player_switch_back_quality">Daha yüksek kaliteye dön</string>
+    <string name="player_feed_end">Sona ulaştınız</string>
+    <string name="player_replay">Tekrar izle</string>
 </resources>

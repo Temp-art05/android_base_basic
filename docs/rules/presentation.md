@@ -83,6 +83,13 @@ log/analytics hành động gắn được ở một chỗ, và luồng dữ li�
   `beyondViewportPageCount = 1`, báo `PageSettled` → VM.
 - Feed bị che hẳn (tab ẩn, mở màn khác, STOP) → `player.setActive(false)` nhả decoder; hiện lại → `setActive(true)`.
   Không để hai pool cùng giữ decoder. Lifecycle là intent (`ScreenStarted`/`ScreenStopped`), VM quyết pause/lưu vị trí.
+- Vào nền ở màn phát chính (Player): `pause()` + `setPreloadActive(false)` (nhả player lân cận, giữ player hiện tại).
+- STOP do xoay máy (`isChangingConfigurations`) bị bỏ qua — không khựng tiếng.
+- Tiến độ phát: `StateFlow<PlaybackProgress>` riêng, đọc trong lambda (`drawBehind`/track) — không đưa `positionMs`
+  vào ViewState (tick recompose cả màn). Hỏi theo id trang (`fractionFor(id)`), không theo trang hiện tại.
+- VM là nguồn sự thật của trang hiện tại: pager báo `PageSettled`; tự sang trang kế thì VM gửi `ScrollToPage`, mở
+  video ở `PageSettled` như user vuốt.
+- Mẫu đủ: `main/reels/` (tab, gate theo `isSelected`) và `player/` — xem `docs/guides/sample-flow.md` mục 2.
 
 ## Popup
 
@@ -119,7 +126,7 @@ FooScreen(
 - `NavigationRequest`: `NavigateTo`, `NavigateToAndClearBackStack`, `PopBackStack`, `NavigateUp`, `PopTo`. Có throttle
   chống double-tap; điều hướng không do user bấm (deeplink, hết phiên) gọi `NavigationThrottle.awaitWindow()` trước.
 
-## Main 3 tab (Home, Bookmarks, Settings)
+## Main 4 tab (Home, Reels, Bookmarks, Settings)
 
 `HorizontalPager` làm container giữ tab, không phải carousel: `userScrollEnabled = false`, đổi tab bằng
 `scrollToPage` (không trượt qua tab giữa), `beyondViewportPageCount = tabs.lastIndex` (tab đã mở không
