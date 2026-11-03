@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_back">Geri</string>
+    <string name="language_choose_manually">Elle seç</string>
+    <string name="language_current">Şu an %1$s</string>
+    <string name="language_description">Uygulama arayüzünün tamamına uygulanır. Değişiklikler hemen geçerli olur - yeniden başlatma gerekmez.</string>
+    <string name="language_system">Cihaz dilini kullan</string>
+    <string name="language_title">Dil</string>
+    <string name="settings_app_language">Uygulama dili</string>
+    <string name="settings_group_appearance">Görünüm</string>
+    <string name="settings_group_language">Dil</string>
+    <string name="settings_theme_dark">Koyu</string>
+    <string name="settings_theme_light">Açık</string>
+    <string name="tab_home">Ana Sayfa</string>
+    <string name="tab_settings">Ayarlar</string>
+    <!-- SAMPLE: luồng post -->
+    <string name="home_title">Gönderiler</string>
+    <string name="tab_bookmarks">Yer imleri</string>
+    <string name="bookmarks_title">Yer imleri</string>
+    <string name="bookmarks_empty_title">Henüz yer imi yok</string>
+    <string name="bookmarks_empty_body">Bir gönderiyi burada tutmak için yer imi simgesine dokunun.</string>
+    <string name="bookmarks_empty_action">Gönderilere göz at</string>
+    <string name="post_detail_title">Gönderi</string>
+    <string name="post_bookmark_cd">Yer imine ekle</string>
+    <string name="post_unbookmark_cd">Yer imini kaldır</string>
+    <string name="bookmark_added">Yer imlerine kaydedildi</string>
+    <string name="bookmark_removed">Yer imlerinden kaldırıldı</string>
+</resources>

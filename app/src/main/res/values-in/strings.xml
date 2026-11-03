@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_back">Kembali</string>
+    <string name="language_choose_manually">Pilih manual</string>
+    <string name="language_current">Saat ini %1$s</string>
+    <string name="language_description">Berlaku untuk seluruh antarmuka aplikasi. Perubahan langsung berlaku - tanpa perlu memulai ulang.</string>
+    <string name="language_system">Ikuti bahasa perangkat</string>
+    <string name="language_title">Bahasa</string>
+    <string name="settings_app_language">Bahasa aplikasi</string>
+    <string name="settings_group_appearance">Tampilan</string>
+    <string name="settings_group_language">Bahasa</string>
+    <string name="settings_theme_dark">Gelap</string>
+    <string name="settings_theme_light">Terang</string>
+    <string name="tab_home">Beranda</string>
+    <string name="tab_settings">Setelan</string>
+    <!-- SAMPLE: luồng post -->
+    <string name="home_title">Postingan</string>
+    <string name="tab_bookmarks">Bookmark</string>
+    <string name="bookmarks_title">Bookmark</string>
+    <string name="bookmarks_empty_title">Belum ada bookmark</string>
+    <string name="bookmarks_empty_body">Ketuk ikon bookmark pada postingan untuk menyimpannya di sini.</string>
+    <string name="bookmarks_empty_action">Lihat postingan</string>
+    <string name="post_detail_title">Postingan</string>
+    <string name="post_bookmark_cd">Bookmark</string>
+    <string name="post_unbookmark_cd">Hapus bookmark</string>
+    <string name="bookmark_added">Disimpan ke bookmark</string>
+    <string name="bookmark_removed">Dihapus dari bookmark</string>
+</resources>

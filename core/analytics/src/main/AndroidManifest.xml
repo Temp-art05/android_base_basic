@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Module này gọi FirebaseAnalytics/Crashlytics nên phải tự khai báo permission nó cần.
+  Khai ở đây (thay vì ở :app) để app nào include module này là tự có đủ quyền — và để
+  lint kiểm tra được trong phạm vi module.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+</manifest>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:pathData="M24,4h60a20,20 0,0 1,20 20v60a20,20 0,0 1,-20 20h-60a20,20 0,0 1,-20 -20v-60a20,20 0,0 1,20 -20z">
+        <aapt:attr name="android:fillColor">
+            <!-- Nền AppColors.Dark.bg + quầng cam ấm như Splash. -->
+            <gradient
+                android:type="radial"
+                android:centerX="54" android:centerY="46"
+                android:gradientRadius="64">
+                <item android:offset="0" android:color="#FF3A2312" />
+                <item android:offset="1" android:color="#FF160F0A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- FlowMark (viewBox 100, như Brand.kt): play gradient phía sau, play trắng phía trước. -->
+    <group android:scaleX="0.8" android:scaleY="0.8" android:translateX="13.2" android:translateY="14.0">
+        <path android:pathData="M46,27L84,50L46,73Z" android:fillAlpha="0.9" android:strokeAlpha="0.9"
+            android:strokeWidth="5.5" android:strokeLineJoin="round">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="46" android:startY="27"
+                android:endX="84" android:endY="73">
+                <item android:offset="0" android:color="#FFFFB020" />
+                <item android:offset="0.55" android:color="#FFFF6A3D" />
+                <item android:offset="1" android:color="#FFF5405F" />
+            </gradient>
+        </aapt:attr>
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="46" android:startY="27"
+                android:endX="84" android:endY="73">
+                <item android:offset="0" android:color="#FFFFB020" />
+                <item android:offset="0.55" android:color="#FFFF6A3D" />
+                <item android:offset="1" android:color="#FFF5405F" />
+            </gradient>
+        </aapt:attr>
+        </path>
+        <path android:pathData="M18,31L52,50L18,69Z" android:fillColor="#FFFFFFFF"
+            android:strokeColor="#FFFFFFFF" android:strokeWidth="5.5" android:strokeLineJoin="round" />
+    </group>
+</vector>

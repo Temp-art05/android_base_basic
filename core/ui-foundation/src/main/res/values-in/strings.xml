@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_network">Tidak ada koneksi internet. Periksa jaringanmu, lalu coba lagi.</string>
+    <string name="error_timeout">Permintaan terlalu lama. Silakan coba lagi.</string>
+    <string name="error_server">Ada masalah di sisi kami. Silakan coba lagi nanti.</string>
+    <string name="error_unauthorized">Sesimu telah berakhir. Silakan masuk lagi.</string>
+    <string name="error_unexpected">Terjadi kesalahan. Silakan coba lagi.</string>
+    <string name="state_offline_title">Kamu sedang offline</string>
+    <string name="state_offline_body">Periksa Wi-Fi atau data seluler - sungainya akan tetap di sini.</string>
+    <string name="state_error_title">Terjadi kesalahan</string>
+    <string name="state_try_again">Coba lagi</string>
+</resources>

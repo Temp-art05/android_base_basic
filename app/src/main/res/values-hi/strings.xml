@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_back">वापस</string>
+    <string name="language_choose_manually">खुद चुनें</string>
+    <string name="language_current">अभी %1$s</string>
+    <string name="language_description">पूरे ऐप इंटरफ़ेस पर लागू होता है। बदलाव तुरंत लागू होते हैं - रीस्टार्ट की ज़रूरत नहीं।</string>
+    <string name="language_system">डिवाइस की भाषा अपनाएँ</string>
+    <string name="language_title">भाषा</string>
+    <string name="settings_app_language">ऐप की भाषा</string>
+    <string name="settings_group_appearance">दिखावट</string>
+    <string name="settings_group_language">भाषा</string>
+    <string name="settings_theme_dark">डार्क</string>
+    <string name="settings_theme_light">लाइट</string>
+    <string name="tab_home">होम</string>
+    <string name="tab_settings">सेटिंग्स</string>
+    <!-- SAMPLE: luồng post -->
+    <string name="home_title">पोस्ट</string>
+    <string name="tab_bookmarks">बुकमार्क</string>
+    <string name="bookmarks_title">बुकमार्क</string>
+    <string name="bookmarks_empty_title">अभी कोई बुकमार्क नहीं</string>
+    <string name="bookmarks_empty_body">किसी पोस्ट को यहाँ रखने के लिए बुकमार्क आइकन पर टैप करें।</string>
+    <string name="bookmarks_empty_action">पोस्ट देखें</string>
+    <string name="post_detail_title">पोस्ट</string>
+    <string name="post_bookmark_cd">बुकमार्क करें</string>
+    <string name="post_unbookmark_cd">बुकमार्क हटाएँ</string>
+    <string name="bookmark_added">बुकमार्क में सहेजा गया</string>
+    <string name="bookmark_removed">बुकमार्क से हटाया गया</string>
+</resources>

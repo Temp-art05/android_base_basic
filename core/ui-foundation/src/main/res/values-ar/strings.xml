@@ -1,0 +1,11 @@
+<resources>
+    <string name="error_network">لا يوجد اتصال بالإنترنت. تحقّق من الشبكة وحاول مجددًا.</string>
+    <string name="error_timeout">استغرق الطلب وقتًا طويلًا. حاول مجددًا.</string>
+    <string name="error_server">حدث خطأ من جهتنا. حاول لاحقًا.</string>
+    <string name="error_unauthorized">انتهت جلستك. سجّل الدخول مجددًا.</string>
+    <string name="error_unexpected">حدث خطأ ما. حاول مجددًا.</string>
+    <string name="state_offline_title">أنت غير متصل</string>
+    <string name="state_offline_body">تحقّق من Wi-Fi أو بيانات الجوال - سيبقى النهر هنا.</string>
+    <string name="state_error_title">حدث خطأ ما</string>
+    <string name="state_try_again">حاول مرة أخرى</string>
+</resources>

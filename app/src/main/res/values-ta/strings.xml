@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_back">பின்செல்</string>
+    <string name="language_choose_manually">நீங்களே தேர்வுசெய்யுங்கள்</string>
+    <string name="language_current">தற்போது %1$s</string>
+    <string name="language_description">முழு ஆப் இடைமுகத்துக்கும் பொருந்தும். மாற்றங்கள் உடனே அமலுக்கு வரும் - மறுதொடக்கம் தேவையில்லை.</string>
+    <string name="language_system">சாதன மொழியைப் பின்பற்று</string>
+    <string name="language_title">மொழி</string>
+    <string name="settings_app_language">ஆப் மொழி</string>
+    <string name="settings_group_appearance">தோற்றம்</string>
+    <string name="settings_group_language">மொழி</string>
+    <string name="settings_theme_dark">டார்க்</string>
+    <string name="settings_theme_light">லைட்</string>
+    <string name="tab_home">முகப்பு</string>
+    <string name="tab_settings">அமைப்புகள்</string>
+    <!-- SAMPLE: luồng post -->
+    <string name="home_title">பதிவுகள்</string>
+    <string name="tab_bookmarks">புக்மார்க்குகள்</string>
+    <string name="bookmarks_title">புக்மார்க்குகள்</string>
+    <string name="bookmarks_empty_title">இன்னும் புக்மார்க்குகள் இல்லை</string>
+    <string name="bookmarks_empty_body">ஒரு பதிவை இங்கே வைத்திருக்க புக்மார்க் ஐகானைத் தட்டவும்.</string>
+    <string name="bookmarks_empty_action">பதிவுகளைப் பார்க்கவும்</string>
+    <string name="post_detail_title">பதிவு</string>
+    <string name="post_bookmark_cd">புக்மார்க் செய்</string>
+    <string name="post_unbookmark_cd">புக்மார்க்கை அகற்று</string>
+    <string name="bookmark_added">புக்மார்க்குகளில் சேமிக்கப்பட்டது</string>
+    <string name="bookmark_removed">புக்மார்க்குகளிலிருந்து அகற்றப்பட்டது</string>
+</resources>

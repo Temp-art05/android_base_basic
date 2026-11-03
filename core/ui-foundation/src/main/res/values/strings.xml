@@ -1,0 +1,11 @@
+<resources>
+    <string name="error_network">No internet connection. Please check your network and try again.</string>
+    <string name="error_timeout">The request took too long. Please try again.</string>
+    <string name="error_server">Something went wrong on our side. Please try again later.</string>
+    <string name="error_unauthorized">Your session has expired. Please sign in again.</string>
+    <string name="error_unexpected">Something went wrong. Please try again.</string>
+    <string name="state_offline_title">You\'re offline</string>
+    <string name="state_offline_body">Check Wi-Fi or mobile data - the river will still be here.</string>
+    <string name="state_error_title">Something went wrong</string>
+    <string name="state_try_again">Try again</string>
+</resources>

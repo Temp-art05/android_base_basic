@@ -1,0 +1,11 @@
+<resources>
+    <string name="error_network">இணைய இணைப்பு இல்லை. நெட்வொர்க்கைச் சரிபார்த்து மீண்டும் முயலவும்.</string>
+    <string name="error_timeout">கோரிக்கைக்கு அதிக நேரம் ஆனது. மீண்டும் முயலவும்.</string>
+    <string name="error_server">எங்கள் பக்கத்தில் ஏதோ தவறு. பிறகு மீண்டும் முயலவும்.</string>
+    <string name="error_unauthorized">உங்கள் அமர்வு காலாவதியானது. மீண்டும் உள்நுழையவும்.</string>
+    <string name="error_unexpected">ஏதோ தவறு நடந்தது. மீண்டும் முயலவும்.</string>
+    <string name="state_offline_title">நீங்கள் ஆஃப்லைனில் உள்ளீர்கள்</string>
+    <string name="state_offline_body">Wi-Fi அல்லது மொபைல் டேட்டாவைச் சரிபார்க்கவும் - நதி இங்கேயே இருக்கும்.</string>
+    <string name="state_error_title">ஏதோ தவறு நடந்தது</string>
+    <string name="state_try_again">மீண்டும் முயலவும்</string>
+</resources>

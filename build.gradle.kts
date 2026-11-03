@@ -1,0 +1,19 @@
+buildscript {
+    dependencies {
+        // AGP 9 built-in Kotlin đi kèm một KGP mặc định thấp hơn; ép lên bản trong catalog
+        // để khớp với kotlin.plugin.compose / serialization / :domain (kotlin-jvm).
+        classpath(libs.kotlin.gradle.plugin)
+    }
+}
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    alias(libs.plugins.android.application) apply false
+    alias(libs.plugins.android.library) apply false
+    alias(libs.plugins.kotlin.compose) apply false
+    alias(libs.plugins.kotlin.serialization) apply false
+    alias(libs.plugins.ksp) apply false
+    alias(libs.plugins.androidx.room) apply false
+    alias(libs.plugins.google.services) apply false
+    alias(libs.plugins.firebase.crashlytics) apply false
+}

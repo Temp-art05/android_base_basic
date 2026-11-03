@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dùng cho API < 31. Xem data_extraction_rules.xml cho API 31+. -->
+<full-backup-content>
+    <exclude domain="file" path="datastore/" />
+    <exclude domain="sharedpref" path="remote_config.xml" />
+</full-backup-content>

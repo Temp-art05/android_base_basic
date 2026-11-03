@@ -1,0 +1,11 @@
+<resources>
+    <string name="error_network">Sem conexão com a internet. Verifique sua rede e tente de novo.</string>
+    <string name="error_timeout">A solicitação demorou demais. Tente de novo.</string>
+    <string name="error_server">Algo deu errado do nosso lado. Tente mais tarde.</string>
+    <string name="error_unauthorized">Sua sessão expirou. Entre novamente.</string>
+    <string name="error_unexpected">Algo deu errado. Tente de novo.</string>
+    <string name="state_offline_title">Você está off-line</string>
+    <string name="state_offline_body">Verifique o Wi-Fi ou os dados móveis - o rio vai continuar aqui.</string>
+    <string name="state_error_title">Algo deu errado</string>
+    <string name="state_try_again">Tentar de novo</string>
+</resources>

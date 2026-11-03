@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_back">رجوع</string>
+    <string name="language_choose_manually">اختيار يدوي</string>
+    <string name="language_current">حاليًا %1$s</string>
+    <string name="language_description">تُطبَّق على واجهة التطبيق بالكامل. تسري التغييرات فورًا - دون الحاجة لإعادة التشغيل.</string>
+    <string name="language_system">مطابقة لغة الجهاز</string>
+    <string name="language_title">اللغة</string>
+    <string name="settings_app_language">لغة التطبيق</string>
+    <string name="settings_group_appearance">المظهر</string>
+    <string name="settings_group_language">اللغة</string>
+    <string name="settings_theme_dark">داكن</string>
+    <string name="settings_theme_light">فاتح</string>
+    <string name="tab_home">الرئيسية</string>
+    <string name="tab_settings">الإعدادات</string>
+    <!-- SAMPLE: luồng post -->
+    <string name="home_title">المنشورات</string>
+    <string name="tab_bookmarks">الإشارات المرجعية</string>
+    <string name="bookmarks_title">الإشارات المرجعية</string>
+    <string name="bookmarks_empty_title">لا توجد إشارات مرجعية بعد</string>
+    <string name="bookmarks_empty_body">انقر على رمز الإشارة المرجعية في أي منشور للاحتفاظ به هنا.</string>
+    <string name="bookmarks_empty_action">تصفّح المنشورات</string>
+    <string name="post_detail_title">منشور</string>
+    <string name="post_bookmark_cd">إضافة إشارة مرجعية</string>
+    <string name="post_unbookmark_cd">إزالة الإشارة المرجعية</string>
+    <string name="bookmark_added">تم الحفظ في الإشارات المرجعية</string>
+    <string name="bookmark_removed">تمت الإزالة من الإشارات المرجعية</string>
+</resources>

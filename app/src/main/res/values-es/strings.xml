@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_back">Atrás</string>
+    <string name="language_choose_manually">Elegir manualmente</string>
+    <string name="language_current">Ahora: %1$s</string>
+    <string name="language_description">Se aplica a toda la interfaz de la app. Los cambios son inmediatos: no hace falta reiniciar.</string>
+    <string name="language_system">Idioma del dispositivo</string>
+    <string name="language_title">Idioma</string>
+    <string name="settings_app_language">Idioma de la app</string>
+    <string name="settings_group_appearance">Apariencia</string>
+    <string name="settings_group_language">Idioma</string>
+    <string name="settings_theme_dark">Oscuro</string>
+    <string name="settings_theme_light">Claro</string>
+    <string name="tab_home">Inicio</string>
+    <string name="tab_settings">Ajustes</string>
+    <!-- SAMPLE: luồng post -->
+    <string name="home_title">Publicaciones</string>
+    <string name="tab_bookmarks">Guardados</string>
+    <string name="bookmarks_title">Guardados</string>
+    <string name="bookmarks_empty_title">Aún no hay guardados</string>
+    <string name="bookmarks_empty_body">Toca el icono de guardar en una publicación para tenerla aquí.</string>
+    <string name="bookmarks_empty_action">Ver publicaciones</string>
+    <string name="post_detail_title">Publicación</string>
+    <string name="post_bookmark_cd">Guardar</string>
+    <string name="post_unbookmark_cd">Quitar de guardados</string>
+    <string name="bookmark_added">Guardado</string>
+    <string name="bookmark_removed">Quitado de guardados</string>
+</resources>

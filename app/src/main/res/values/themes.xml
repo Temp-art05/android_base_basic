@@ -1,0 +1,10 @@
+<resources>
+    <!--
+      XML theme for the Activity window only. All in-app styling lives in Compose
+      (:designsystem AppTheme). Dark parent + nền Sunset Flow (#160F0A) để khung cửa sổ trước
+      frame Compose đầu tiên không loé trắng — app mặc định theme tối theo design.
+    -->
+    <style name="Theme.App" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+</resources>

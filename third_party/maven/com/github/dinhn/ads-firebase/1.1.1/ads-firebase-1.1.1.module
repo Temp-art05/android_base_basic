@@ -1,0 +1,124 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.dinhn",
+    "module": "ads-firebase",
+    "version": "1.1.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.11.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.github.dinhn",
+          "module": "ads-core",
+          "version": {
+            "requires": "1.1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ads-firebase-1.1.1.aar",
+          "url": "ads-firebase-1.1.1.aar",
+          "size": 9929,
+          "sha512": "c2787ee30032fc8d4f38d7b1b5f60c66e0281a392ff9221d2443eaaa53b078a8fdd8d09ae7aa9413a81baccaf6728a23e88d7e5abc6b0d9e5ba5c1d948a2d7d6",
+          "sha256": "4e3b2ef37b0aa44d1f84f6fe8805966d8ae236e271960a993fcfa577b03f57a6",
+          "sha1": "d821838f8a93f70494d67b8bf776199f7f10ecd5",
+          "md5": "59a13e2fb61394ad80c4299140ffe3d5"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.13.1"
+          }
+        },
+        {
+          "group": "com.google.firebase",
+          "module": "firebase-analytics",
+          "version": {
+            "requires": "22.1.2"
+          }
+        },
+        {
+          "group": "com.github.dinhn",
+          "module": "ads-core",
+          "version": {
+            "requires": "1.1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ads-firebase-1.1.1.aar",
+          "url": "ads-firebase-1.1.1.aar",
+          "size": 9929,
+          "sha512": "c2787ee30032fc8d4f38d7b1b5f60c66e0281a392ff9221d2443eaaa53b078a8fdd8d09ae7aa9413a81baccaf6728a23e88d7e5abc6b0d9e5ba5c1d948a2d7d6",
+          "sha256": "4e3b2ef37b0aa44d1f84f6fe8805966d8ae236e271960a993fcfa577b03f57a6",
+          "sha1": "d821838f8a93f70494d67b8bf776199f7f10ecd5",
+          "md5": "59a13e2fb61394ad80c4299140ffe3d5"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "ads-firebase-1.1.1-sources.jar",
+          "url": "ads-firebase-1.1.1-sources.jar",
+          "size": 4452,
+          "sha512": "180878049ba37f1598b53fba04e909b1918e0c459bf3ee1ee3dc2474d30c795c653cf10a646beddcb6a9499ec825e35d70c43971b4dfd2af27c1f6199cc4b399",
+          "sha256": "b7e881762d685047b25e85ac603bcec6b082ef0857d3d27c1e608c87a2541ad8",
+          "sha1": "4858b54f38df5e370a8432928479c65867cb086f",
+          "md5": "6fa5cf619d3ac57a15c8d705422ccb25"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<resources>
+    <string name="error_network">इंटरनेट कनेक्शन नहीं है। कृपया नेटवर्क जाँचें और फिर कोशिश करें।</string>
+    <string name="error_timeout">अनुरोध में बहुत समय लगा। कृपया फिर कोशिश करें।</string>
+    <string name="error_server">हमारी ओर से कुछ गड़बड़ हुई। कृपया बाद में कोशिश करें।</string>
+    <string name="error_unauthorized">आपका सत्र समाप्त हो गया है। कृपया फिर से साइन इन करें।</string>
+    <string name="error_unexpected">कुछ गड़बड़ हो गई। कृपया फिर कोशिश करें।</string>
+    <string name="state_offline_title">आप ऑफ़लाइन हैं</string>
+    <string name="state_offline_body">वाई-फ़ाई या मोबाइल डेटा जाँचें - नदी यहीं रहेगी।</string>
+    <string name="state_error_title">कुछ गड़बड़ हो गई</string>
+    <string name="state_try_again">फिर से कोशिश करें</string>
+</resources>

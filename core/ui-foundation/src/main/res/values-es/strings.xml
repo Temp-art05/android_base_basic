@@ -1,0 +1,11 @@
+<resources>
+    <string name="error_network">Sin conexión a Internet. Revisa tu red e inténtalo de nuevo.</string>
+    <string name="error_timeout">La solicitud tardó demasiado. Inténtalo de nuevo.</string>
+    <string name="error_server">Algo salió mal por nuestra parte. Inténtalo más tarde.</string>
+    <string name="error_unauthorized">Tu sesión ha caducado. Vuelve a iniciar sesión.</string>
+    <string name="error_unexpected">Algo salió mal. Inténtalo de nuevo.</string>
+    <string name="state_offline_title">Sin conexión</string>
+    <string name="state_offline_body">Revisa el Wi-Fi o los datos móviles: el río seguirá aquí.</string>
+    <string name="state_error_title">Algo salió mal</string>
+    <string name="state_try_again">Reintentar</string>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nhãn bắt buộc theo policy native ad của AdMob; giữ một nhãn cho mọi ngôn ngữ. -->
+    <string name="ads_native_badge" translatable="false">Ad</string>
+</resources>

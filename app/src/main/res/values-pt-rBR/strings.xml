@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_back">Voltar</string>
+    <string name="language_choose_manually">Escolher manualmente</string>
+    <string name="language_current">Atualmente %1$s</string>
+    <string name="language_description">Vale para toda a interface do app. As mudanças valem na hora - sem reiniciar.</string>
+    <string name="language_system">Idioma do dispositivo</string>
+    <string name="language_title">Idioma</string>
+    <string name="settings_app_language">Idioma do app</string>
+    <string name="settings_group_appearance">Aparência</string>
+    <string name="settings_group_language">Idioma</string>
+    <string name="settings_theme_dark">Escuro</string>
+    <string name="settings_theme_light">Claro</string>
+    <string name="tab_home">Início</string>
+    <string name="tab_settings">Configurações</string>
+    <!-- SAMPLE: luồng post -->
+    <string name="home_title">Posts</string>
+    <string name="tab_bookmarks">Salvos</string>
+    <string name="bookmarks_title">Salvos</string>
+    <string name="bookmarks_empty_title">Nenhum item salvo ainda</string>
+    <string name="bookmarks_empty_body">Toque no ícone de salvar em um post para guardá-lo aqui.</string>
+    <string name="bookmarks_empty_action">Ver posts</string>
+    <string name="post_detail_title">Post</string>
+    <string name="post_bookmark_cd">Salvar</string>
+    <string name="post_unbookmark_cd">Remover dos salvos</string>
+    <string name="bookmark_added">Salvo</string>
+    <string name="bookmark_removed">Removido dos salvos</string>
+</resources>

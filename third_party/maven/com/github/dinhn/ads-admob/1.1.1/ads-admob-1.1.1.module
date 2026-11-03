@@ -1,0 +1,159 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.dinhn",
+    "module": "ads-admob",
+    "version": "1.1.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.11.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.github.dinhn",
+          "module": "ads-core",
+          "version": {
+            "requires": "1.1.1"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-ads",
+          "version": {
+            "requires": "23.6.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ads-admob-1.1.1.aar",
+          "url": "ads-admob-1.1.1.aar",
+          "size": 26906,
+          "sha512": "56efe3b43ab9bfc590fbcb8aa425784bff8f9dfb26b73a70cbd2eee3412230d58d7aa854568a82d3494fae7da49c4d51f0a489a02677c745ca0fdfbde02de6bc",
+          "sha256": "66b9bba689d647eb80d65e129856ab62dda53e62a6bb680020b0dd42bfae4b20",
+          "sha1": "7da912a1ea96814472be36e516fb9adcf5365307",
+          "md5": "83185504ce45f156bed452ce62255dde"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.13.1"
+          }
+        },
+        {
+          "group": "com.google.ads.mediation",
+          "module": "facebook",
+          "version": {
+            "requires": "6.19.0.0"
+          }
+        },
+        {
+          "group": "com.google.ads.mediation",
+          "module": "applovin",
+          "version": {
+            "requires": "13.1.0.0"
+          }
+        },
+        {
+          "group": "com.google.ads.mediation",
+          "module": "pangle",
+          "version": {
+            "requires": "6.5.0.4.0"
+          }
+        },
+        {
+          "group": "com.google.ads.mediation",
+          "module": "mintegral",
+          "version": {
+            "requires": "16.9.41.0"
+          }
+        },
+        {
+          "group": "com.github.dinhn",
+          "module": "ads-core",
+          "version": {
+            "requires": "1.1.1"
+          }
+        },
+        {
+          "group": "com.google.android.gms",
+          "module": "play-services-ads",
+          "version": {
+            "requires": "23.6.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ads-admob-1.1.1.aar",
+          "url": "ads-admob-1.1.1.aar",
+          "size": 26906,
+          "sha512": "56efe3b43ab9bfc590fbcb8aa425784bff8f9dfb26b73a70cbd2eee3412230d58d7aa854568a82d3494fae7da49c4d51f0a489a02677c745ca0fdfbde02de6bc",
+          "sha256": "66b9bba689d647eb80d65e129856ab62dda53e62a6bb680020b0dd42bfae4b20",
+          "sha1": "7da912a1ea96814472be36e516fb9adcf5365307",
+          "md5": "83185504ce45f156bed452ce62255dde"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "ads-admob-1.1.1-sources.jar",
+          "url": "ads-admob-1.1.1-sources.jar",
+          "size": 5738,
+          "sha512": "240afbb0fc7f560111151ccf9c2c9338bcdcac676a301e5be0b2856287b0a59993436418435703cd2df9ac2fa7420df10588861bdb99cfec8388afc9f583ea01",
+          "sha256": "d184f6321f793367a1cb369dfd3506b0843b7a8ccc5ac2cd773a202b2fa0fb91",
+          "sha1": "90815f6e7f5991645d2beb3e6a478ceec01c6a07",
+          "md5": "ad7ff95ff25e6598d7dc90cf040505f3"
+        }
+      ]
+    }
+  ]
+}
