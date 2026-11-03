@@ -19,7 +19,7 @@ Hướng dẫn & mẫu:
 
 | File | Nội dung |
 |---|---|
-| [`docs/guides/sample-flow.md`](docs/guides/sample-flow.md) | luồng mẫu post feed + bookmark đủ tầng — đọc để hiểu base; cách xoá |
+| [`docs/guides/sample-flow.md`](docs/guides/sample-flow.md) | luồng mẫu post feed + bookmark, Reels + Player (preload, cache) — đọc để hiểu base; cách xoá |
 | [`docs/guides/new-api.md`](docs/guides/new-api.md) | thêm một API mới từng bước (domain → data → presentation) |
 | [`docs/guides/utils.md`](docs/guides/utils.md) | Toast Compose, Context ext, NetworkUtils, NotificationHelper |
 
@@ -82,8 +82,8 @@ Dùng Firebase thật mà chỉ đăng ký một app thì bỏ `applicationIdSuf
 ## DI (Koin)
 
 `BaseApp.onCreate()` gọi `startKoin` với `configModule`, `appModule` (`AppScope`, `ThemeHolder`, `ConnectivityMonitor`),
-`analyticsModule(isDebug)`, `remoteConfigModule`, `dataModule`, `adsModule`, `mediaModule()` và một module cho mỗi
-feature (`mainModule`). Sau đó `AdsInitializer.start()`. ViewModel inject qua `koinViewModel()`.
+`analyticsModule(isDebug)`, `remoteConfigModule`, `dataModule`, `adsModule`, `mediaModule(tierOverride)` và một module cho mỗi
+feature (`mainModule`). Sau đó `AdsInitializer.start()` và `prepareMediaCache()` trên IO (xoá cache video phiên trước). ViewModel inject qua `koinViewModel()`.
 
 ## Core
 

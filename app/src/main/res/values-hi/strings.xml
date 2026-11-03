@@ -25,4 +25,25 @@
     <string name="post_unbookmark_cd">बुकमार्क हटाएँ</string>
     <string name="bookmark_added">बुकमार्क में सहेजा गया</string>
     <string name="bookmark_removed">बुकमार्क से हटाया गया</string>
+    <!-- SAMPLE (video): Reels + Player -->
+    <string name="tab_reels">रील्स</string>
+    <string name="video_play_cd">चलाएं</string>
+    <string name="video_pause_cd">रोकें</string>
+    <string name="video_error_playback">यह वीडियो अभी नहीं चल सकता।</string>
+    <string name="video_error_no_source">इस वीडियो का कोई चलने योग्य स्रोत नहीं है।</string>
+    <string name="video_open_player">प्लेयर खोलें</string>
+    <string name="video_speed">गति</string>
+    <string name="video_speed_cd">प्लेबैक गति %1$s×</string>
+    <string name="video_more">और</string>
+    <string name="video_less">कम</string>
+    <string name="player_options">विकल्प</string>
+    <string name="player_seek_cd">आगे-पीछे करें</string>
+    <string name="player_quality">गुणवत्ता</string>
+    <string name="player_quality_auto">ऑटो</string>
+    <string name="player_quality_auto_hint">आपके कनेक्शन के अनुसार बदलता है</string>
+    <string name="player_loading">लोड हो रहा है…</string>
+    <string name="player_quality_dropped">धीमा कनेक्शन — %1$s पर बदला गया</string>
+    <string name="player_switch_back_quality">बेहतर गुणवत्ता पर वापस जाएं</string>
+    <string name="player_feed_end">आप अंत तक पहुंच गए</string>
+    <string name="player_replay">फिर से देखें</string>
 </resources>

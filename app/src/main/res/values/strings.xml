@@ -27,4 +27,27 @@
     <string name="post_unbookmark_cd">Remove bookmark</string>
     <string name="bookmark_added">Saved to bookmarks</string>
     <string name="bookmark_removed">Removed from bookmarks</string>
+    <!-- SAMPLE (video): Reels + Player -->
+    <string name="video_speed_value" translatable="false">%1$s×</string>
+    <string name="player_position" translatable="false">%1$d / %2$d</string>
+    <string name="tab_reels">Reels</string>
+    <string name="video_play_cd">Play</string>
+    <string name="video_pause_cd">Pause</string>
+    <string name="video_error_playback">This video can\'t be played right now.</string>
+    <string name="video_error_no_source">This video has no playable source.</string>
+    <string name="video_open_player">Open player</string>
+    <string name="video_speed">Speed</string>
+    <string name="video_speed_cd">Playback speed %1$s×</string>
+    <string name="video_more">more</string>
+    <string name="video_less">less</string>
+    <string name="player_options">Options</string>
+    <string name="player_seek_cd">Seek</string>
+    <string name="player_quality">Quality</string>
+    <string name="player_quality_auto">Auto</string>
+    <string name="player_quality_auto_hint">Adjusts to your connection</string>
+    <string name="player_loading">Loading…</string>
+    <string name="player_quality_dropped">Slow connection — switched to %1$s</string>
+    <string name="player_switch_back_quality">Switch back to higher quality</string>
+    <string name="player_feed_end">You\'ve reached the end</string>
+    <string name="player_replay">Watch again</string>
 </resources>

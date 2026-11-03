@@ -25,4 +25,25 @@
     <string name="post_unbookmark_cd">Hapus bookmark</string>
     <string name="bookmark_added">Disimpan ke bookmark</string>
     <string name="bookmark_removed">Dihapus dari bookmark</string>
+    <!-- SAMPLE (video): Reels + Player -->
+    <string name="tab_reels">Reels</string>
+    <string name="video_play_cd">Putar</string>
+    <string name="video_pause_cd">Jeda</string>
+    <string name="video_error_playback">Video ini tidak dapat diputar sekarang.</string>
+    <string name="video_error_no_source">Video ini tidak punya sumber yang dapat diputar.</string>
+    <string name="video_open_player">Buka pemutar</string>
+    <string name="video_speed">Kecepatan</string>
+    <string name="video_speed_cd">Kecepatan putar %1$s×</string>
+    <string name="video_more">selengkapnya</string>
+    <string name="video_less">lebih sedikit</string>
+    <string name="player_options">Opsi</string>
+    <string name="player_seek_cd">Geser posisi</string>
+    <string name="player_quality">Kualitas</string>
+    <string name="player_quality_auto">Otomatis</string>
+    <string name="player_quality_auto_hint">Menyesuaikan dengan koneksi Anda</string>
+    <string name="player_loading">Memuat…</string>
+    <string name="player_quality_dropped">Koneksi lambat — dialihkan ke %1$s</string>
+    <string name="player_switch_back_quality">Kembali ke kualitas lebih tinggi</string>
+    <string name="player_feed_end">Anda sudah sampai di akhir</string>
+    <string name="player_replay">Tonton lagi</string>
 </resources>

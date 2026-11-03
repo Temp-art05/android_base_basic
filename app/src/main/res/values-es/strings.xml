@@ -25,4 +25,25 @@
     <string name="post_unbookmark_cd">Quitar de guardados</string>
     <string name="bookmark_added">Guardado</string>
     <string name="bookmark_removed">Quitado de guardados</string>
+    <!-- SAMPLE (video): Reels + Player -->
+    <string name="tab_reels">Reels</string>
+    <string name="video_play_cd">Reproducir</string>
+    <string name="video_pause_cd">Pausar</string>
+    <string name="video_error_playback">Este video no se puede reproducir ahora.</string>
+    <string name="video_error_no_source">Este video no tiene ninguna fuente reproducible.</string>
+    <string name="video_open_player">Abrir reproductor</string>
+    <string name="video_speed">Velocidad</string>
+    <string name="video_speed_cd">Velocidad de reproducción %1$s×</string>
+    <string name="video_more">más</string>
+    <string name="video_less">menos</string>
+    <string name="player_options">Opciones</string>
+    <string name="player_seek_cd">Desplazar</string>
+    <string name="player_quality">Calidad</string>
+    <string name="player_quality_auto">Automática</string>
+    <string name="player_quality_auto_hint">Se ajusta a tu conexión</string>
+    <string name="player_loading">Cargando…</string>
+    <string name="player_quality_dropped">Conexión lenta: se cambió a %1$s</string>
+    <string name="player_switch_back_quality">Volver a una calidad más alta</string>
+    <string name="player_feed_end">Llegaste al final</string>
+    <string name="player_replay">Ver de nuevo</string>
 </resources>

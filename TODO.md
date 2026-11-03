@@ -61,7 +61,9 @@ Xem `README.md` cho cấu trúc, `docs/rules/` cho quy ước code.
 
 - [ ] Xoá luồng mẫu theo mục "Xoá khi làm project thật" trong `docs/guides/sample-flow.md`
 - [ ] Sửa enum `MainTab` + `MainScreen` cho tab thật (giữ `MainBottomNavBar`, Settings, Language nếu dùng)
-- [ ] Không dùng video: bỏ `:core:media` (settings, `app/build.gradle.kts`, `mediaModule()` trong `BaseApp`)
+- [ ] Có video: đổi `VideoRemoteDataSourceImpl`/`VideoDto` sang API thật, giữ Reels/Player; chỉnh `MediaProfile` nếu cần
+- [ ] Không dùng video: xoá luồng video (sample-flow mục 2), rồi bỏ `:core:media` (settings, `app/build.gradle.kts`,
+      `testFixtures(project(":core:media"))`, `mediaModule()` + `prepareMediaCache()` + `devTierOverride` trong `BaseApp`)
 
 ## 9. Nên làm sớm
 

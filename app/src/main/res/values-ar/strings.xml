@@ -25,4 +25,25 @@
     <string name="post_unbookmark_cd">إزالة الإشارة المرجعية</string>
     <string name="bookmark_added">تم الحفظ في الإشارات المرجعية</string>
     <string name="bookmark_removed">تمت الإزالة من الإشارات المرجعية</string>
+    <!-- SAMPLE (video): Reels + Player -->
+    <string name="tab_reels">ريلز</string>
+    <string name="video_play_cd">تشغيل</string>
+    <string name="video_pause_cd">إيقاف مؤقت</string>
+    <string name="video_error_playback">لا يمكن تشغيل هذا الفيديو الآن.</string>
+    <string name="video_error_no_source">لا يوجد مصدر قابل للتشغيل لهذا الفيديو.</string>
+    <string name="video_open_player">فتح المشغّل</string>
+    <string name="video_speed">السرعة</string>
+    <string name="video_speed_cd">سرعة التشغيل %1$s×</string>
+    <string name="video_more">المزيد</string>
+    <string name="video_less">أقل</string>
+    <string name="player_options">الخيارات</string>
+    <string name="player_seek_cd">تقديم/ترجيع</string>
+    <string name="player_quality">الجودة</string>
+    <string name="player_quality_auto">تلقائي</string>
+    <string name="player_quality_auto_hint">تتكيّف مع اتصالك</string>
+    <string name="player_loading">جارٍ التحميل…</string>
+    <string name="player_quality_dropped">اتصال بطيء — تم التبديل إلى %1$s</string>
+    <string name="player_switch_back_quality">العودة إلى جودة أعلى</string>
+    <string name="player_feed_end">وصلت إلى النهاية</string>
+    <string name="player_replay">المشاهدة مرة أخرى</string>
 </resources>

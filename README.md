@@ -37,7 +37,7 @@ core/
   analytics/                 Analytics, Crash, Remote Config — Firebase sau interface, mặc định no-op
   ui-foundation/             BaseViewModel (MVI), CollectAsEffect, error → string, AppLocale
   design-system/             theme (dark mặc định), component, icon
-  media/                     ExoPlayer pool cho feed video dọc
+  media/                     ExoPlayer pool cho feed video dọc: preload lân cận, cache đĩa, DeviceTier
   ads/                       Interstitial / Reward / Native manager, bật tắt theo Remote Config
 build-logic/                 convention plugin: base.android.application | library | compose
 ```
@@ -47,11 +47,15 @@ Chi tiết: [`docs/rules/architecture.md`](docs/rules/architecture.md).
 
 ## Luồng mẫu
 
-Post feed từ `https://dummyjson.com/posts`, đủ mọi tầng:
+Hai luồng đủ mọi tầng: post feed từ `https://dummyjson.com/posts` và video dọc (Reels + Player):
 
 - **Home** — feed phân trang (cuộn gần cuối tự tải), bookmark từng post, skeleton / lỗi + thử lại.
 - **Bookmarks** — danh sách bookmark stream từ Room, trạng thái rỗng.
 - **Post detail** — destination có tham số `postId`, bookmark, back.
+- **Reels** — feed video dọc kiểu TikTok: pool player preload video lân cận, cache đĩa, chỉ phát khi tab hiện,
+  tự sang reel kế. Feed `sample-api/videos.json` (cache JSON ra đĩa → mở offline vẫn có feed).
+- **Player** — vuốt dọc qua feed, xem tiếp chỗ đã dừng (Room), kéo tua, tốc độ, quality (Auto tự hạ khi mạng chậm),
+  pause + nhả preload khi vào nền, giữ trạng thái qua xoay máy / process death.
 - **Settings** — theme Dark/Light (DataStore), mở **Language** (10 ngôn ngữ UI, đổi ngay không restart, `ar` RTL).
 
 Đọc theo thứ tự: [`docs/guides/sample-flow.md`](docs/guides/sample-flow.md) — có mục "Xoá khi làm project thật".

@@ -16,7 +16,7 @@ chặn nên `ArchitectureTest` (`app/src/test`) soát import thay — xem [Quy t
 | `:core:analytics` | `com.base.app.core.analytics` | `Analytics`, `plugin/`, `crash/`, `remoteconfig/` — mọi thứ Firebase, sau interface |
 | `:core:ui-foundation` | `com.base.app.core.ui.foundation` | `vm/` (BaseViewModel), `ext/` (CollectAsEffect), `error/` (→ string res), `locale/`, `format/` |
 | `:core:design-system` | `com.base.app.core.designsystem` | `theme/`, `component/`, `icon/` |
-| `:core:media` | `com.base.app.core.media` | ExoPlayer: pool player cho feed video dọc, cache, `DeviceTier` |
+| `:core:media` | `com.base.app.core.media` | ExoPlayer: pool player cho feed video dọc (preload lân cận), `SimpleCache` theo phiên, `DeviceTier`/`MediaProfile`, `VideoSurface`. Dùng ở Reels + Player |
 | `:core:ads` | `com.base.app.core.ads` | `InterstitialAdManager`, `RewardAdManager`, `NativeAdManager`, `AdsInitializer`, `policy/` (`AdsConfig`, `AdsPolicy`, use case bật/tắt placement), `config/` (đọc `ads_config` từ Remote Config). Chỉ module này phụ thuộc lib ads (`com.github.dinhn:ads-*`, vendor ở `third_party/maven`) |
 
 ```
@@ -58,8 +58,8 @@ app/src/main/java/com/base/app/
       common/                 composable dùng chung trong feature
 ```
 
-Mẫu thật: `feature/main` — `presentation/main/` (container 3 tab: `home/`, `bookmarks/`, `settings/`),
-`presentation/postdetail/`, `presentation/language/`. Luồng đủ tầng: `docs/guides/sample-flow.md`.
+Mẫu thật: `feature/main` — `presentation/main/` (container 4 tab: `home/`, `reels/`, `bookmarks/`, `settings/`),
+`presentation/postdetail/`, `presentation/player/`, `presentation/language/`. Luồng đủ tầng: `docs/guides/sample-flow.md`.
 
 ## Quy tắc cứng
 
@@ -98,7 +98,7 @@ map sang `Destination`, rồi điều hướng sau `NavigationThrottle.awaitWind
 ## DI
 
 `BaseApp.startKoin` gom: `configModule`, `appModule` (`:app/di`), `analyticsModule` + `remoteConfigModule`
-(`:core:analytics`), `dataModule` (`data/di`), `adsModule` (`:core:ads`), `mediaModule()` (`:core:media`),
+(`:core:analytics`), `dataModule` (`data/di`), `adsModule` (`:core:ads`), `mediaModule(tierOverride)` (`:core:media`, sau đó `prepareMediaCache()` trên IO),
 và một module cho mỗi feature (`mainModule`).
 
 ## Khi nào tách module

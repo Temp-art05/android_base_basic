@@ -11,6 +11,7 @@ enum class MainTab(
     val icon: ImageVector,
 ) {
     Home(R.string.tab_home, AppIcons.TabHome),
+    Reels(R.string.tab_reels, AppIcons.TabReels),
     Bookmarks(R.string.tab_bookmarks, AppIcons.Bookmark),
     Settings(R.string.tab_settings, AppIcons.TabSettings),
 }
